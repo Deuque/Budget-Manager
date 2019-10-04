@@ -25,5 +25,28 @@ public class Sp {
         String m = sharedPreferences.getString("month","0/0000");
         return m;
     }
+    public static void setLoggedIn(boolean state){
+        spe.putBoolean("loggedIn",state);
+        spe.commit();
+    }
+    public static boolean getLoggedIn(){
+        boolean li = sharedPreferences.getBoolean("loggedIn",false);
+        return li;
+    }
+    public static void setDetails(String email,String pass){
+        spe.putString("email",email);
+        spe.putString("pass",pass);
+        spe.commit();
+    }
+    public static boolean checkDetails(String email,String password){
+        String li = sharedPreferences.getString("email","");
+        String li2 = sharedPreferences.getString("pass","");
+        if(li.equalsIgnoreCase(email)&&li2.equalsIgnoreCase(password)){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 
 }

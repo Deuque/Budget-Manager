@@ -90,6 +90,11 @@ public class MainActivity extends AppCompatActivity {
             populateBalance();
             return true;
         }
+        if (id == R.id.log) {
+            new Sp(getApplicationContext()).setLoggedIn(false);
+            finish();
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }
