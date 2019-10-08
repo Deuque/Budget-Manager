@@ -54,39 +54,42 @@
         android:animateLayoutChanges="true">
 
         <TextView
-            android:id="@+id/lg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bgshape11"
-            android:fontFamily="@font/poppins"
-            android:gravity="center"
-            android:paddingStart="20dp"
-            android:paddingTop="9dp"
-            android:paddingEnd="20dp"
-            android:paddingBottom="9dp"
-            android:text="Login"
-            android:textColor="@color/aux1"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            android:visibility="gone"/>
-        <TextView
             android:id="@+id/reg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/bgshape11"
-            android:backgroundTint="@color/aux1"
+            android:textColor="@color/aux1"
             android:text="Register"
             android:textSize="14sp"
             android:paddingTop="9dp"
             android:paddingBottom="9dp"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
-            android:textColor="@color/colorAccent"
             android:fontFamily="@font/poppins"
-            android:layout_marginTop="10dp"
+
             android:textStyle="bold"
             android:gravity="center"
             android:visibility="gone"/>
+        <TextView
+            android:id="@+id/lg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bgshape11"
+            android:backgroundTint="@color/aux1"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="9dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="9dp"
+            android:text="Login"
+            android:textColor="@color/colorAccent"
+
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
     </LinearLayout>
 
 
